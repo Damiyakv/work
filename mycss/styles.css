@@ -1,0 +1,234 @@
+/* General Website Style rules */
+html, body {
+  scroll-behavior: smooth;
+  font-family: "Raleway", Sans-Serif;
+  background-image: url("images/bground.png");
+  background-size: 1500px 2600px;
+  background-position: 20px 90px;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding: 0px;
+  margin: 0;
+    overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+  width: 100%;
+  top: 0;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;  
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: black;
+  height: ;
+  width: device;
+  overflow: hidden;
+  padding-top: -10px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: white;
+  float: right;
+  text-align: left;
+  padding: 25px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: black;
+  color: slategrey;
+  transition: color 200ms ease-out 70ms
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: white;
+  color: black;
+
+}
+.header {
+  padding-top: 50px;
+  padding-bottom: 300px;
+  text-align: left;
+  margin: 30px;
+
+}
+.filtered {
+    filter: saturate(800%);
+  }
+.transparent {
+  position: relative; top: -1020px; left: 590px;
+  opacity: 0;
+  transition-property: opacity linear 100ms;
+  transition-duration: 200ms;
+  transition-delay: 5ms;
+
+}
+.transparent:hover
+  {
+  opacity: 1;
+  }
+
+.name {
+  font-size: 90px;
+  font-weight: 100;
+  position: relative; left: 30px; bottom: 0px;
+}
+.des {
+  font-size: 30px;
+  font-weight: 100;
+  position: relative; bottom: 80px; right: -300px;
+  animation-name: slidedes;
+  animation-duration: 5s;
+}
+
+@keyframes slidedes {
+  0% {
+    opacity: 0.75;
+    transform: translateY(-110%);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0%)
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.header {
+  width: device-width;
+  height: device-height;
+}
+
+.scroll_content {
+  display: block;
+  width: 100%;
+  transform: translateX(30%);
+  animation: move 60s linear infinite;
+  font-size: 180px;
+  white-space: nowrap;
+  text-shadow: 10px 10px 2.5px #77777659;
+
+}
+@keyframes move {
+  to { transform: translateX(-1000%); }
+}
+/* work section*/
+
+.container {
+  position: relative;
+  top: -900px;
+  max-width: 1200px;
+  margin: auto;
+  overflow: auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.gallery {
+  float: none;
+  width: 370px;
+  padding: 5px;
+  flex-shrink: 1;
+}
+
+.gallery img{
+  width: 170%;
+  height: auto;
+}
+.desc {
+  text-align: left;
+  font-size: 30px;
+  padding: 0px;
+}
+
+.two {
+  width: device-width;
+  height: 670px;
+  background-color: black;
+  position: relative;
+  top: -500px;
+}
+
+.touch {
+  font-size: 100px;
+}
+.hr {
+    display: block;
+        border: 0;
+    top: -120px;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Raleway';
+    width: 960px;
+    height: 300px;
+    margin: -10px;
+    margin-top: -150px;
+}
+
+.text-copy {
+    fill: none;
+    stroke: whitesmoke;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: white;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: white;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: white;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: slategrey;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: lightgrey;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
+
+.email {
+  font-size: 80px;
+  padding-left: 450px;
+  margin-top: -15px;
+  text-decoration: none;
+  color: white;
+
+}
+
+#footer {
+  background-color: black;
+}
+

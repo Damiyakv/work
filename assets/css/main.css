@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+html, body {
+  scroll-behavior: smooth;
+  font-family: "Raleway", sans-serif;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+    overflow-x: hidden;
+
+}
+ul {
+  list-style-type: none;
+  width: 100%;
+  top: 0;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;  
+}
+
+#header {
+  width: device-width;
+  text-align: left;
+  background-color: black;
+  padding: 25px;
+
+}
+
+.header a{
+  color: white;
+  float: right;
+  text-align: left;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+
+}
+.header a:hover{
+  color: grey;
+  transition: color 200ms ease-out 30ms;
+}
+
+.inner {
+  padding: 60px;
+  position: relative;
+}
+
+.major {
+  float: left;
+  padding-left: 55px;
+  font-size: 70px;
+  text-align: left;
+  font-weight: 100;
+}
+
+.subtitle {
+  position: relative;
+  text-align: left;
+  padding: 30px;
+  bottom: -90px;
+}
+.docimages {
+  display: grid;
+  font-size: 18px;
+  grid-template-columns: 300px 1fr;
+  padding: 2rem;
+  gap: 1rem;
+  align-items: flex-start;
+  max-width: device-width;
+
+}
+.docimages img{
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+}
+
+.dis {
+  position: relative;
+
+}
+.photo img{
+  width: 40%;
+  margin: 30px;
+  
+}
+.photo{
+  align-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin: auto;
+  justify-content: space-between;
+
+}
+
+
+.camera img{
+  width: 33%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
