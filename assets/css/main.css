@@ -6,7 +6,9 @@ html, body {
   background-repeat: no-repeat;
   padding: 0;
   margin: 0;
-    overflow-x: hidden;
+  overflow-x: hidden;
+  width: device-width;
+
 
 }
 ul {
@@ -40,6 +42,17 @@ ul {
   transition: color 200ms ease-out 30ms;
 }
 
+.header a.active {
+   animation: jump 1s linear infinite;
+}
+@keyframes jump {
+  0%{ transform: translateY(0%); }
+  25% {transform: translateY(25%);}
+  75% {transform: translateY(-25%);}
+  100% {transform: translateY(0%);}
+}
+
+
 .inner {
   padding: 60px;
   position: relative;
@@ -51,6 +64,7 @@ ul {
   font-size: 70px;
   text-align: left;
   font-weight: 100;
+  position: relative;
 }
 
 .subtitle {
@@ -75,44 +89,40 @@ ul {
   height: auto;
 }
 
+
+.docimages a:hover{
+ animation: zoom 0.8s forwards;
+}
+
+@keyframes zoom {
+  0% {transform:scale(1.0) ;}
+  100% {transform: scale(1.1);}
+}
+
+
 .dis {
   position: relative;
 
 }
 .photo img{
   width: 40%;
-  margin: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  padding: 1vw;
+
   
 }
 .photo{
-  align-content: center;
-  flex-wrap: wrap;
-  position: relative;
+  position: absolute;
   margin: auto;
-  justify-content: space-between;
 
 }
-
-
 .camera img{
-  width: 33%;
-
+  width: 66%;
+  max-width: 600px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1vw;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
