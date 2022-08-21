@@ -75,20 +75,24 @@ ul {
 }
 .docimages {
   display: grid;
-  font-size: 18px;
-  grid-template-columns: 300px 1fr;
-  padding: 2rem;
-  gap: 1rem;
-  align-items: flex-start;
-  max-width: device-width;
+  font-size: 25px;
+  font-weight: 100;
+  margin-right: auto;
+  margin-left: auto;
 
 }
 .docimages img{
-  width: 300px;
+  width: 400px;
   max-width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.docimages a{
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .docimages a:hover{
  animation: zoom 0.8s forwards;
@@ -126,3 +130,4 @@ ul {
   margin-left: auto;
   padding: 1vw;
 }
+
